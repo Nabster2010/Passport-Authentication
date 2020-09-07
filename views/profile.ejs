@@ -1,0 +1,7 @@
+<%- include('partials/header.ejs') %>
+
+<h1>
+	profile page <% if(user) { %> <%= user.displayName %> <% } %>
+	<a href="/auth/logout">logout</a>
+</h1>
+<%- include('partials/footer.ejs') %>
